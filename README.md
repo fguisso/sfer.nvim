@@ -1,24 +1,10 @@
-# sarifviewer.nvim
+# sfer.nvim
 
 A simple SARIF viewer plugin for Neovim, designed for Minimal dependencies and LazyVim integration.
 
 ## Installation
 
 Using LazyVim:
-
-```lua
--- in your lazy.lua plugin list
-{
-  "seu-usuario/lazyvim-sarifviewer",
-  dependencies = {},  -- no external dependencies
-  config = function()
-    require("sarifviewer").setup({
-      sidebar = { width = 50 },
-    })
-    require("sarifviewer.commands")
-  end,
-}
-```
 
 ## Usage
 
@@ -35,7 +21,7 @@ Call `require("sarifviewer").setup(opts)` before loading commands.
 
 | Option                | Default       | Description                                      |
 | --------------------- | ------------- | ------------------------------------------------ |
-| `sidebar.width`       | `40`          | Width of the sidebar split                       |
+| `sidebar.width`       | `45`          | Width of the sidebar split                       |
 | `sidebar.border`      | `"single"`    | Border style for the split ("single", "rounded") |
 | `indent.rule`         | `0`           | Indentation spaces for rule lines                |
 | `indent.location`     | `2`           | Indentation for location lines                   |
