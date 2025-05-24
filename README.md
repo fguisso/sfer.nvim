@@ -80,6 +80,15 @@ We're actively developing sfer.nvim. Here are the next planned features:
 * 🖍 **Highlight current result block** with stronger styles (bold, underline, or background)
 * 📊 **SARIF Explorer mode**: allow filtering by rule, severity, or file (for large reports)
 
+## 🙏 Acknowledgements
+
+This project was inspired by the excellent work from:
+- [pwntester/codeql.nvim](https://github.com/pwntester/codeql.nvim)
+- [microsoft/sarif-vscode-extension](https://github.com/microsoft/sarif-vscode-extension)
+
+Thanks for paving the way in SARIF tooling and Neovim integration.
+
+
 Pull requests and ideas are welcome!
 Feel free to open issues or create discussions.
 
