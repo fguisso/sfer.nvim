@@ -23,7 +23,7 @@
 ## ✨ Features
 
 * **Sidebar Navigation**: Explore SARIF reports in a structured sidebar.
-* **Interactive Exploration**: Press `l` to open files at specific findings.
+* **Interactive Exploration**: Press `l` to expand/collapse rules and alert messages.
 * **Visual Highlights**: Highlights affected code regions.
 * **Lazy Loading**: Optimized for performance with lazy loading capabilities.
 * **Minimal Dependencies**: Designed to work seamlessly with LazyVim and other setups.
@@ -44,8 +44,10 @@ Once `sfer.nvim` is installed and configured, it works automatically:
 * `l`:
 
   * Expand/collapse items in the sidebar
-  * If you're on a specific location, it will open the related file and highlight the issue
+  * On an alert item, toggle full message visibility
 * `q`: Close the sidebar
+* `c`: Send current selection to quickfix (all/rule/alert)
+* `:SarifQuickfix`: Send all SARIF findings to quickfix
 
 ## ⚙️ Configuration
 
