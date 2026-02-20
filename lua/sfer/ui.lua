@@ -121,6 +121,7 @@ function M.open_sidebar(tree)
 		api.nvim_set_option_value("number", false, { win = win })
 		api.nvim_set_option_value("relativenumber", false, { win = win })
 		api.nvim_set_option_value("cursorline", true, { win = win })
+		api.nvim_set_option_value("winfixwidth", true, { win = win })
 	end
 
 	local lines, meta = render_sidebar(tree)
@@ -128,6 +129,10 @@ function M.open_sidebar(tree)
 	vim.b[buf].sfer_sidebar_meta = meta
 
 	M.attach_mappings(buf, tree)
+
+	if main_win and api.nvim_win_is_valid(main_win) then
+		api.nvim_set_current_win(main_win)
+	end
 end
 
 function M.attach_mappings(buf, tree)
